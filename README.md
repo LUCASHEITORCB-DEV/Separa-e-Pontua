@@ -1,70 +1,165 @@
-# Getting Started with Create React App
+# 🌱 EcoHeroes: Missão Reciclagem
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação móvel gamificada para conscientizar e educar alunos sobre coleta seletiva e descarte correto de resíduos.
 
-## Available Scripts
+## 📋 Sobre o Projeto
 
-In the project directory, you can run:
+EcoHeroes é uma aplicação educacional voltada para alunos de 12 a 18 anos que utiliza elementos de gamificação para ensinar sobre sustentabilidade e reciclagem. O projeto combina diversão e aprendizado através de missões, mini-jogos e um sistema de recompensas.
 
-### `npm start`
+## 🎯 Objetivos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Conscientizar jovens sobre a importância da coleta seletiva
+- Ensinar o descarte correto de diferentes tipos de resíduos
+- Motivar através de elementos de gamificação
+- Facilitar o acompanhamento do progresso pelos professores
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Funcionalidades
 
-### `npm test`
+### Para Alunos
+- **Sistema de Pontos e Níveis**: Ganhe pontos completando missões e suba de nível
+- **Insígnias e Conquistas**: Desbloqueie badges especiais por suas realizações
+- **Mini-jogo "Separa e Recicla"**: Jogo interativo para aprender sobre separação de materiais
+- **Missões Diversificadas**: Atividades de coleta, projetos de upcycling e educação ambiental
+- **Acompanhamento de Progresso**: Visualize seu desempenho em tempo real
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Para Professores
+- **Painel de Controle**: Interface para gerenciar e aprovar missões
+- **Validação de Atividades**: Aprovação de tarefas submetidas pelos alunos
+- **Relatórios de Progresso**: Acompanhe o desenvolvimento de cada estudante
+- **Gestão de Turmas**: Organize e monitore múltiplos alunos
 
-### `npm run build`
+## 🛠️ Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js
+- **Estilização**: Tailwind CSS
+- **Gestão de Estado**: React Hooks (useState, useEffect, useRef)
+- **Animações**: CSS Transitions e Tailwind utilities
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Estrutura do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   ├── HomePage.js          # Tela inicial com perfil e visão geral
+│   ├── GamePage.js          # Mini-jogo "Separa e Recicla"
+│   ├── MissionsPage.js      # Lista de missões do usuário
+│   └── TeacherDashboard.js  # Painel de controle do professor
+├── App.js                   # Componente principal com roteamento
+├── index.css               # Estilos globais e configurações do Tailwind
+└── index.js                # Ponto de entrada da aplicação
+```
 
-### `npm run eject`
+## 🎮 Mini-jogo: Separa e Recicla
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O jogo principal da aplicação onde os alunos aprendem sobre separação de materiais:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Objetivo**: Classificar corretamente diferentes tipos de resíduos
+- **Mecânica**: Clique na lixeira correta para cada item
+- **Sistema de Pontuação**: 10 pontos por acerto
+- **Tempo Limite**: 30 segundos por partida
+- **Vidas**: 3 tentativas por jogo
+- **Progressão**: Missão desbloqueada com 500 pontos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Categorias de Materiais:
+- 🔴 **Plástico**: Garrafas PET, sacolas plásticas
+- 🔵 **Papel**: Jornais, revistas, papelão
+- 🟡 **Metal**: Latas de alumínio, tampas metálicas
+- 🟢 **Vidro**: Garrafas, potes de vidro
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📊 Sistema de Gamificação
 
-## Learn More
+### Pontuação
+- Completar missões: 100 pontos
+- Jogar mini-jogo: pontos variáveis (baseado no desempenho)
+- Aprovação do professor: pontos bonus
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Níveis
+- Cada 250 pontos = 1 nível
+- Níveis desbloqueiam novas missões e conquistas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Conquistas
+- Reciclador Iniciante
+- Separador Expert  
+- Eco-Herói
+- Conquistas específicas por número de missões
 
-### Code Splitting
+## 🎯 Tipos de Missões
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🎮 Mini-jogos
+Atividades interativas para aprender conceitos de forma divertida
 
-### Analyzing the Bundle Size
+### ♻️ Coleta Seletiva
+Missões práticas de coleta e separação de materiais no mundo real
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🎨 Projetos de Upcycling
+Criação de objetos úteis a partir de materiais recicláveis
 
-### Making a Progressive Web App
+### 📚 Educação Ambiental
+Atividades de conscientização e compartilhamento de conhecimento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Como Executar o Projeto
 
-### Advanced Configuration
+1. **Instalar dependências**
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Executar em modo de desenvolvimento**
+```bash
+npm start
+```
 
-### Deployment
+3. **Acessar a aplicação**
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📱 Navegação da Aplicação
 
-### `npm run build` fails to minify
+### Tela Inicial (HomePage)
+- Visualização do perfil do usuário
+- Progresso geral e conquistas
+- Acesso rápido ao jogo e missões
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Mini-jogo (GamePage)  
+- Interface de jogo interativa
+- Sistema de pontuação em tempo real
+- Feedback visual para acertos e erros
+
+### Missões (MissionsPage)
+- Lista completa de missões disponíveis
+- Acompanhamento de progresso individual
+- Status de aprovação das atividades
+
+### Painel Professor (TeacherDashboard)
+- Gestão de missões pendentes
+- Aprovação de atividades dos alunos
+- Relatórios de atividade recente
+
+## 🎨 Design e UX
+
+- **Cores Principais**: Verde (sustentabilidade), Azul (educação), tons vibrantes
+- **Tipografia**: Fonte "game" (Comic Sans MS) para elementos lúdicos
+- **Ícones**: Emojis para interface amigável e universal
+- **Responsividade**: Design adaptado para dispositivos móveis e desktop
+- **Animações**: Transições suaves e feedback visual
+
+## 🔮 Próximos Passos
+
+### Melhorias Planejadas
+- [ ] Integração com banco de dados real (Firebase/Supabase)
+- [ ] Sistema de autenticação de usuários
+- [ ] Funcionalidade de criação de missões pelo professor
+- [ ] Mais mini-jogos educativos
+- [ ] Sistema de ranking entre alunos
+- [ ] Notificações para lembrar de missões
+
+### Recursos Técnicos
+- [ ] Testes automatizados
+- [ ] PWA (Progressive Web App)
+- [ ] Otimização de performance
+- [ ] Acessibilidade melhorada
+
+---
+
+**Desenvolvido com 💚 para um futuro mais sustentável** 🌍
