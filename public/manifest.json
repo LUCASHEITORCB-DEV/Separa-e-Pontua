@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "EcoHeroes",
+  "name": "EcoHeroes: Missão Reciclagem",
+  "description": "Aplicativo educacional gamificado para ensinar sobre reciclagem e sustentabilidade",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,8 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#10b981",
+  "background_color": "#e7f5e7",
+  "categories": ["education", "games", "lifestyle"],
+  "orientation": "portrait"
 }

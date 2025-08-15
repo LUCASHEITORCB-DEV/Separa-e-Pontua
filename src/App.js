@@ -3,6 +3,7 @@ import HomePage from './components/HomePage';
 import GamePage from './components/GamePage';
 import MissionsPage from './components/MissionsPage';
 import TeacherDashboard from './components/TeacherDashboard';
+import InstallPWA from './components/InstallPWA';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -149,6 +150,7 @@ function App() {
   return (
     <div className="App min-h-screen bg-gradient-to-br from-green-100 to-blue-100">
       {renderCurrentPage()}
+      <InstallPWA />
     </div>
   );
 }
